@@ -1,0 +1,55 @@
+.time-war{
+   width: 100%;
+   height: 100%;
+   color: #fff;
+   z-index: 99; 
+   font-family: 'Bold';
+   display: flex;
+   position: relative;
+   .clock{
+       display: flex;
+       align-items: center;
+       height: 70px;
+       line-height: 70px;
+       margin-left: 10px;
+       span{
+           font-size: 60px;
+       }
+       b{
+           font-size: 35px; 
+       }
+   }
+   .time-mid{
+    width: 145px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    // border: 1px solid #fff;
+    margin-left: 30px;
+    .one-one{
+        margin-top: 10px;
+        span{
+            font-size: 23px;
+        }
+    }
+    .two-w{
+        width: 200px;
+        span{
+            font-size: 23px;
+            letter-spacing: 2px;
+        }
+    }
+   }
+   .time-right{
+    position: absolute;
+    right: 0;
+    top:10px;
+    width: 263px;
+    height: 70px;
+    .time-right-img{
+        width: 279px;
+        height: 70px;
+    }
+   }
+}

@@ -1,0 +1,21 @@
+@import "@/assets/css/func.scss";
+.layout-wrapper{
+    width: 100%;
+    height: 100vh;
+    .content-one{
+        display: flex;
+        width: 100vw;
+        height:calc( 100% - 76px);
+        @media screen and (max-width:1366px){
+            height:calc( 100% - 54px);
+        }
+        .con{
+            width: calc( 100% - 240px);
+            background: transparent;
+            height: 100%;
+            @media screen and (max-width:1366px){
+                width:calc( 100% - 200px);
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+
+@import "@/assets/css/func.scss";
+.interll-wrapper{
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    padding: 24px; 
+    background: #f3f5fa;
+    box-shadow:inset  1px 14px 2px  rgba(188,206, 231,0.1);
+    .interll-con{
+        height: 100%;
+        width: 100%;
+        padding: 24px; 
+        background: #fff; 
+        box-shadow: 0px  1px 14px 2px  rgba(188,206, 231,0.1);
+        border-radius: 6px;
+        .shoot-inp{
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+          
+            .inp-con{
+                display: flex;
+                align-items: center;
+                margin-right: 39px;
+                width: 100%;
+                justify-content: space-between;
+                .left{
+                    display: flex;
+                    align-items: center;
+                    
+                    .upDate{
+                        width:px2Rem(30px);
+                        height: px2Rem(30px);
+                        margin-left: px2Rem(10px);
+                        transform: scale(0.8);
+                        transition: all 0.3s ease-in-out;
+                        cursor: pointer;
+                        background: url('#{$img}/update1.png') center no-repeat;
+                        &:hover{
+                         background: url('#{$img}/update2.png') center no-repeat;
+                        }
+                     }
+                }
+                
+                 .addDec{
+                    outline: none;
+                    border: none;
+                    width: px2Rem(80px);
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #fff;
+                    background: url('#{$img}/btn.png') center no-repeat;
+                    border-radius: 6px;
+                    margin-right:14px;
+                    @media screen and (max-width:1280px){
+                        height: 25px;
+                        line-height:25px;  
+                    }
+                 }
+                 .addDec1{
+                    outline: none;
+                    border: 1px solid #2761ea;
+                    width: 80px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #2761ea;
+                    background: #f1f4fc;
+                    border-radius: 6px;
+                    margin-right: 7px;
+                    &:hover{
+                        background-color: #d8e4ff;
+                      }
+                 }
+                 .inp{
+                    width: 220px;
+                    height: 30px;
+                    line-height:30px;
+                    padding: 0 px2Rem(10px);
+                    border: 1px solid #e3e3e6;
+                    border-radius: 4px;
+                    outline: none;
+                    margin-right: 24px;
+                    transition: all ease-in-out 0.8s;
+                   @media screen and (max-width:1900px){
+                       width: 140px;
+                   }
+                   @media screen and (max-width:1600px){
+                       width: 120px;
+                   }
+                    @media screen and (max-width:1440px){
+                       height: 25px;
+                       line-height:25px;
+                       width: 90px;
+                   }
+                   @media screen and (max-width:1280px){
+                       width: 70px;
+                       }
+                   @media screen and (max-width:1024px){
+                       width: 220px;
+                   }
+
+                }
+            }
+        }
+
+        .dec-list{
+            width: 100%;
+            height:   px2Rem(610px);
+            overflow-y: auto;
+            @media screen and (max-width:1366px){
+              height:250px;
+
+          }
+        }
+       .slot-box{
+        margin-top: 20px;
+       position: relative;
+       .slot{
+         position: absolute;
+         left:50%;
+         transform: translateX(-50%);
+       }
+    }
+    }
+}
+.dec-list::-webkit-scrollbar {
+    width: 6px;
+    height: 2px;
+    position: absolute;
+  }
+    .dec-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  /*鼠标悬浮在该类指向的控件上时滑块的样式*/
+  
+  .dec-list:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  /*鼠标悬浮在滑块上时滑块的样式*/
+  
+  .dec-list::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  /*正常时候的主干部分*/
+  
+  .dec-list::-webkit-scrollbar-track {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: white;
+  }
+  /*鼠标悬浮在滚动条上的主干部分*/
+  
+  .dec-list::-webkit-scrollbar-track:hover {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.01);
+  }

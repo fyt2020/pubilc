@@ -1,0 +1,147 @@
+
+@import "@/assets/css/func.scss";
+#login{
+    position: absolute;
+    box-shadow: 0 0 5px 5px #f3f3f3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../../assets/img/login/BG.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #login_box{
+        width: px2Rem(896px);
+        height: px2Rem(680px);
+        background: url("../../assets/img/login/left_BG.png") no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login_boxImg{
+            width: px2Rem(293px);
+            height: px2Rem(128px);
+        }
+    }
+    #login_content {
+        // position: absolute;
+        width: px2Rem(538px);
+        height: px2Rem(864px);
+        background-color: #ffffff;
+        border-radius: 10px;
+        // right: 280px;
+        // top: 45px;
+        padding: 0 50px;
+        z-index: 10;
+        .SMC_LOGO{
+
+            width: px2Rem(154px);
+            height: px2Rem(38px);
+            margin-top: 150px;
+        }
+           #login_title {
+            width: px2Rem(133px);
+            height: 32px;
+            font-size:px2Rem(42px);
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 30px;
+            letter-spacing: 2px;
+            color: #a8b6ff;
+            margin-top: 64px;
+            }
+            .login-style{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                font-size: px2Rem(30px);
+                color: #000;
+                margin: px2Rem(50px) 0;
+                border-bottom: 2px solid #637cff;
+            }
+            #login_form {
+               margin-top: 70px;
+                        #account{
+                            border:1px solid #eee;
+                            border-radius: 8px;
+                            input{
+                                width: 100%;
+                                height: 60px !important;
+                                background: #ffffff;
+                                border: 0;
+                                font-size: px2Rem(20px);
+                                color: #909399;
+                                padding-left: px2Rem(90px);
+                                border-radius: 8px;
+                             }
+                             span{
+                                display: inline-block;
+                                position: absolute;
+                                width: px2Rem(80px);
+                                height: 60px;
+                                border-right: 1px solid #dcdfe6;
+                                background: url("../../assets/img/account_icon.png") no-repeat center center;
+                                i:before{
+                                    content: ''
+                                }
+                             }
+                           }
+                           #password{
+                            border:1px solid #ddd;
+                            border-radius: 8px;
+                            input{
+                                width: 100%;
+                                height: 60px !important;
+                                background: #ffffff;
+                                border: 0;
+                                font-size: px2Rem(20px);
+                                color: #909399;
+                                padding-left: px2Rem(90px);
+                                border-radius: 8px;
+                              }
+                              span{
+                                display: inline-block;
+                                position: absolute;
+                                width: px2Rem(80px);
+                                height: 60px;
+                                border-right: 1px solid #dcdfe6;
+                                background: url("../../assets/img/password_icon.png") no-repeat center center;
+                                i:before{
+                                    content: ''
+                         }
+                 }
+            }
+            #login_btn{
+                width: 100%;
+                height: 60px;
+                border-radius: 4px;
+                line-height: 60px;
+                font-size: px2Rem(24px);
+                color: #ffffff;
+                cursor: pointer;
+                text-align: center;
+                margin-top: 35px;
+                background:url('../../assets/img/login/login_Button.png') center no-repeat;
+            }
+        }
+       .copyright{
+            height: 16px;
+            font-family: PingFang-SC-Medium;
+            font-size:px2Rem(14px);
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #909399;
+            margin-top: px2Rem(200px);
+            text-align: center;
+            @media screen and (max-width:1440px){
+                margin-top: 70px;
+            }
+        }
+    }
+}
+

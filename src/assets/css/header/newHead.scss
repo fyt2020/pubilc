@@ -1,0 +1,68 @@
+@import "@/assets/css/func.scss";
+.newHead{
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 14px 2px  rgba(188,206, 231,0.1);
+    &__left{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        .newHead__img{
+           display: inline-block;
+           width: 170px;
+           height:40px;
+           margin-left: 61px;
+        }
+        .nav__item{
+           font-size: 16px;
+           margin-left: 20px;
+           &.exactActive{
+               color: aqua;
+           }
+        }
+    }
+    &__right{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        color: #252a2a;
+        .newHead__info{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-end;
+            .deviceSno_wrap{
+                margin-right:20px; 
+                    .deviceSno_item{
+                        font-size: px2Rem(14px);
+                        color: #909399;
+                        transition: all ease-in-out 0.5s;
+                    }
+               } 
+               .deviceAddress_wrap{
+                margin-right:px2Rem(20px); 
+                    .deviceAddress_item{
+                        font-size: px2Rem(16px);
+                        transition: all ease-in-out 0.5s;
+                        margin-right: 5px;
+                    }
+               }
+        }
+        .acc{
+
+            width:  px2Rem(38px);
+            height:  px2Rem(38px);
+            margin-right: 52px;
+        }
+    }
+
+}

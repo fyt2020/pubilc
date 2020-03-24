@@ -1,0 +1,142 @@
+
+@import "@/assets/css/func.scss";
+
+.model-img-war{
+    margin-top: px2Rem(60px);
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    .model-title-box{
+      font-size: px2Rem(16px);
+      .model-item{
+        font-size: px2Rem(14px);
+      }
+    }
+    .model-img-box{
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        height: 420px;
+      
+        .model-item{
+            cursor: pointer;
+            width: px2Rem(188px);
+            height: px2Rem(320px);
+            position: relative;
+            margin: 10px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            border: 1px solid transparent;
+            transition: all ease-in-out 0.5s;
+            .show__box{
+              position: absolute; 
+            }
+
+
+            &:hover{
+                background: #f8f8fb;
+                border: solid 1px #dcdfe6;
+                border-radius: 9px;
+            }
+            .model-item-img{
+                width: 100%;
+                height: 100%;
+                border-radius: 9px;
+            }
+            .username{
+                width: 100%;
+                text-align: center;
+                height:  px2Rem(30px);
+                line-height: px2Rem(30px);
+                background: rgba(0, 0, 0, 0.4);
+                border-bottom-right-radius: 9px;
+                border-bottom-left-radius: 9px;
+                color: #fff;
+                font-size:  px2Rem(18px);
+                position: absolute; 
+                left: 0;
+                bottom: 0;
+            }
+            .orgName{
+                color: #818181;
+                font-size: 14px; 
+            }
+            .tag-box{
+                position: absolute;
+                top:0;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding: 10px 0;
+                .tag-item{
+                  display: inline-block;
+                  width: 44px;
+                  height: 22px;
+                  color: #fff;
+                  text-align: center;
+                  background: #f26164;
+                  line-height: 22px;
+                  border-radius: 4px;
+                  border: solid 1px #be2225;
+                  margin-right: 10px;
+                 &.two{
+                    border:  solid 1px #5539cd; 
+                    background: #746ee6;;
+                 }
+                }
+            }
+           }
+    }
+
+    .slot-box{
+      margin-top: 30px;
+       position: relative;
+       .slot{
+         position: absolute;
+         left:50%;
+         transform: translateX(-50%);
+       }
+    }
+   
+}
+.model-img-box::-webkit-scrollbar {
+    width: 8px;
+    height: 2px;
+    position: absolute;
+    
+  }
+  /*正常情况下滑块的样式*/
+  
+.model-img-box::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  /*鼠标悬浮在该类指向的控件上时滑块的样式*/
+  
+.model-img-box:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  /*鼠标悬浮在滑块上时滑块的样式*/
+  
+.model-img-box::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  /*正常时候的主干部分*/
+  
+.model-img-box::-webkit-scrollbar-track {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: white;
+  }
+  /*鼠标悬浮在滚动条上的主干部分*/
+  
+.model-img-box::-webkit-scrollbar-track:hover {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.01);
+  }

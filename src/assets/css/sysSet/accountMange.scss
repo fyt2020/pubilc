@@ -1,0 +1,121 @@
+
+@import "@/assets/css/func.scss";
+.acc-wrapper{
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    padding: 24px; 
+    background: rgb(245,247,249);
+    box-shadow:inset 0px 1px 14px 2px  rgba(188,206, 231,0.1);
+    .acc-header{
+        width: 100%;
+        height: 170px;
+        background: #fff;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0px 1px 14px 2px  rgba(188,206, 231,0.1);
+        border-radius: 6px;
+        .title{
+            font-size: 16px;
+            color: #252a2a;
+            margin: 10px 0;
+        }    
+        .shoot-inp{
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            // justify-content: flex-end;
+            .inp-con{
+                display: flex;
+                align-items: center;
+                margin-right: 39px;
+                span{
+                    display: inline-block;
+                    width: 60px;
+                    text-align: right;
+                    font-size:14px;
+                    margin-right: 18px;
+                    color: #252a2a;
+                }
+                 .inp{
+                     width: px2Rem(180px);
+                     height: 30px;
+                     line-height: 30px;
+                     padding: 0 10px;
+                     border: 1px solid #e3e3e6;
+                     border-radius: 4px;
+                     outline: none;
+                     background-color: #f5f7fa;
+                     color: #909399;
+                 }
+                 .addDec{
+                    outline: none;
+                    border: none;
+                    width: 80px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #fff;
+                    background: url('#{$img}/btn.png') center no-repeat;
+                    border-radius: 6px;
+                    margin-right: 20px;
+                 }
+            }
+        }
+    }
+    .acc-content{
+        width: 100%;
+        height: 170px;
+        background: #fff;
+        padding: 24px;
+        box-shadow: 0px 1px 14px 2px  rgba(188,206, 231,0.1);
+        border-radius: 6px;
+        .title{
+            font-size: 16px;
+            color: #252a2a;
+           
+        }  
+        .shoot-inp{
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            // justify-content: flex-end;
+            .inp-con{
+                display: flex;
+                align-items: center;
+                margin-right: 39px;
+                span{
+                    display: inline-block;
+                    width: 60px;
+                    text-align: right;
+                    font-size:14px;
+                    margin-right: 18px;
+                    color: #252a2a;
+                }
+                 .inp{
+                    width: px2Rem(180px);
+                     height: 30px;
+                     line-height: 30px;
+                     padding: 0 10px;
+                     border: 1px solid #e3e3e6;
+                     border-radius: 4px;
+                     outline: none;
+                   
+                 }
+                 .addDec{
+                    outline: none;
+                    border: none;
+                    width: 80px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #fff;
+                    background: url('#{$img}/btn.png') center no-repeat;
+                    border-radius: 6px;
+                    margin-right: 20px;
+                 }
+            }
+        }
+
+    }
+}
